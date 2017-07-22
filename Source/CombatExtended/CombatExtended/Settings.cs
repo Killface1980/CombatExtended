@@ -15,12 +15,10 @@ namespace CombatExtended
         // General settings
         private bool showCasings = true;
         private bool showTaunts = true;
-        private bool showGraphicSwearing = true;
         private bool allowMeleeHunting = false;
 
         public bool ShowCasings => showCasings;
         public bool ShowTaunts => showTaunts;
-        public bool ShowGraphicSwearing => showGraphicSwearing;
         public bool AllowMeleeHunting => allowMeleeHunting;
 
         // Ammo settings
@@ -60,7 +58,6 @@ namespace CombatExtended
             base.ExposeData();
             Scribe_Values.Look(ref showCasings, "showCasings", true);
             Scribe_Values.Look(ref showTaunts, "showTaunts", true);
-            Scribe_Values.Look(ref showGraphicSwearing, "showGraphicSwearing", true);
             Scribe_Values.Look(ref allowMeleeHunting, "allowMeleeHunting", false);
 
 #if DEBUG
@@ -96,7 +93,6 @@ namespace CombatExtended
 
             list.CheckboxLabeled("CE_Settings_ShowCasings_Title".Translate(), ref showCasings, "CE_Settings_ShowCasings_Desc".Translate());
             list.CheckboxLabeled("CE_Settings_ShowTaunts_Title".Translate(), ref showTaunts, "CE_Settings_ShowTaunts_Desc".Translate());
-            list.CheckboxLabeled("CE_Settings_ShowGraphicSwearing_Title".Translate(), ref showGraphicSwearing, "CE_Settings_showGraphicSwearing_Desc".Translate());
             list.CheckboxLabeled("CE_Settings_AllowMeleeHunting_Title".Translate(), ref allowMeleeHunting, "CE_Settings_AllowMeleeHunting_Desc".Translate());
 
 #if DEBUG

@@ -434,10 +434,7 @@ namespace CombatExtended
             }
 
 
-            if (DebugViewSettings.drawInterceptChecks)
-            {
-                MoteMaker.ThrowText(thing.Position.ToVector3Shifted(), thing.Map, "x", Color.red);
-            }
+            if (DebugViewSettings.drawInterceptChecks) MoteMaker.ThrowText(thing.Position.ToVector3Shifted(), thing.Map, "x", Color.red);
             Impact(thing);
             return true;
         }

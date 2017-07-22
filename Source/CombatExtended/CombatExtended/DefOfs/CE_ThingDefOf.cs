@@ -16,8 +16,5 @@ namespace CombatExtended
         public static ThingDef FSX;
 
         public static ThingDef AmmoBench;
-
-	    public static ThingDef FilthPee;
-
-    }
+	}
 }
